@@ -1,0 +1,64 @@
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #73809d;
+  color: #e42c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.game {
+  display: flex;
+  gap: 40px;
+}
+
+/* Tablero */
+.board-row {
+  display: flex;
+}
+
+/* Cuadros */
+.square {
+  width: 70px;
+  height: 70px;
+  background: #1e293b;
+  border: 2px solid #334155;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white; /* X y O blancos */
+}
+
+.square:hover {
+  background: #d3d6da;
+}
+
+/* Estado */
+.status {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+/* Historial */
+.game-info button {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.game-info button:hover {
+  background: #394054;
+}
